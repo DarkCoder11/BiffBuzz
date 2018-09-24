@@ -1,0 +1,92 @@
+
+.OrderDiv, .OrderDivAnimatedEnter {
+  width: 20%;
+  height: 20%;
+  margin: 20px;
+  padding: 50px;
+  display: inline-block;
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 24px;
+  perspective: 1200px;
+  transition: all 0.4s ease-in;
+}
+
+@keyframes trueStringEnter {
+ from{
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(-1, 1);
+  }
+}
+
+.OrderDivAnimatedEnter {
+  animation: trueStringEnter 0.4s ease-in 1;
+}
+
+.OrderDivText, .OrderDivTextAnimatedEnter {
+  height: 100%;
+  display: block;
+  transition: all 0.4s ease-in;
+}
+
+
+
+@keyframes trueStringLeave {
+ from {
+    transform: scale(-1, 1);
+  }
+  to{
+    transform: scale(1, 1);
+  }
+}
+
+.OrderDivAnimatedLeave {
+  width: 20%;
+  height: 20%;
+  margin: 20px;
+  padding: 50px;
+  display: inline-block;
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 24px;
+  perspective: 1200px;
+  animation: trueStringLeave 0.4s ease-in 1;
+}
+
+
+
+@keyframes showStringEnter {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+
+.OrderDivTextAnimatedEnter {
+  animation: showStringEnter 0.4s ease-in 1;
+}
+
+
+@keyframes showStringLeave {
+  from {
+    transform: rotateY(-180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.OrderDivTextAnimatedLeave {
+  animation: showStringLeave 0.5s ease-in 1;
+}
+
+
+
+
+ 
+
+
